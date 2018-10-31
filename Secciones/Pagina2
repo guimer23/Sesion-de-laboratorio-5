@@ -1,0 +1,33 @@
+\begin{itemize}
+	\begin{center}
+	    Paso 1
+	\end{center}
+	
+
+	    Primero abrimos el Hyper-v, nos dirijimos donde dice Administrador de conmutadores virtuales hacemos click, después se abrirá otra ventana donde saldrá para crear el Conmmutador Virtual le colocamos cualquier nombre, como lo puedes observar en la siguiente imagen.
+		\begin{center}
+		\includegraphics[width=15cm]{./Imagenes/imagen1} 
+		\end{center}
+	
+
+	\end{itemize} 
+	
+
+	\begin{itemize}
+	\begin{center}
+	    Paso 2
+	\end{center}
+	
+
+	    Despues nos dirigimos a Configuracion de hyper-v, se abrirá una ventana. 
+		\begin{center}
+		\includegraphics[width=15cm]{./Imagenes/imagen2} 
+		\end{center}
+	
+
+	\end{itemize} 
+  
+  
+  
+  
+	\end{itemize} 

@@ -2,6 +2,7 @@
 	\item ¿Qué sucede al ejecutar los siguientes comandos?\\.
 	  -STARTUP OPEN:\\
     La base de datos está completamente funcional. Para ello se abren los archivos de datos y los Redo Log y se comprueba la consistencia de los datos.\\
+    
     -STARTUP MOUNT:\\
     Al estado anterior se añade la lectura de los archivos de control que permiten determinar cómo se ha de preparar la instancia. 
     Se buscan los archivos de datos y los Redo Log, comprobando su existencia en las rutas marcadas por el archivo de control.
@@ -10,7 +11,8 @@
       -Activar el modo ARCHIVELOG.\\
       -Recuperación de la base de datos.\\
       -En definitiva, tareas sobre los archivos de la base de datos ya que aun no se han abierto sus datos.\\
-\begin{center}
+      
+	\begin{center}
 	\includegraphics[width=14cm]{./Imagenes/imagen62} 
 	\end{center}
   
@@ -27,7 +29,7 @@
     con permiso RESTRICTED (lo poseen los administradores) para hacer tareas especiales de administración.\\
     
     -STARTUP RECOVER:\\
-    
+    Especifica que la recuperación de medios se debe realizar, si es necesario, antes de iniciar la instancia. STARTUP RECOVER tiene el mismo efecto que emitir el comando RECOVER DATABASE e iniciar una instancia. Solo la recuperación completa es posible con la RECOVER option.\\
     
     -SHUTDOWN NORMAL:\\
     Espera a que terminen todas las transacciones en curso y todas las sesiones, 

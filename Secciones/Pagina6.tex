@@ -55,3 +55,12 @@
    *Contiene el diccionario de datos.\\
    
    - Tablespaces temporales.-\\
+   *Es aquél en el que solamente puede haber objetos temporales. No se pueden crear objetos permanentes como pueden ser los índices, las tablas o los segmentos de rollback -> Optimización operaciones deordenación\\
+   *De tipo deshacer cambios.\\
+   *Con tamaño de bloque variable.\\
+   *De tipo BigFile.\\
+   *De tipo SmallFile.\\
+   
+   - Tablespaces read only.-\\
+   *Se pueden consultar los datos de los objetos, no se puede ni borrar niinsertar nada en ellos.\\
+   *La principal ventaja de un tablespace read only es que no hace faltahacer backup del mismo.\\

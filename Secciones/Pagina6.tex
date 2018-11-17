@@ -1,0 +1,43 @@
+\section{Cuestionario} 
+	\item ¿Qué sucede al ejecutar los siguientes comandos?\\.
+	  -STARTUP OPEN:\\
+    La base de datos está completamente funcional. Para ello se abren los archivos de datos y los Redo Log y se comprueba la consistencia de los datos.\\
+    -STARTUP MOUNT:\\
+    Al estado anterior se añade la lectura de los archivos de control que permiten determinar cómo se ha de preparar la instancia. 
+    Se buscan los archivos de datos y los Redo Log, comprobando su existencia en las rutas marcadas por el archivo de control.
+    En este estado podemos conectar (como administradores) y realizar tareas como:\\
+      -Cambio del nombre de los archivos de datos.\\
+      -Activar el modo ARCHIVELOG.\\
+      -Recuperación de la base de datos.\\
+      -En definitiva, tareas sobre los archivos de la base de datos ya que aun no se han abierto sus datos.\\
+\begin{center}
+	\includegraphics[width=14cm]{./Imagenes/imagen62} 
+	\end{center}
+  
+    -STARTUP NOMOUNT:\\
+    La instancia de base de datos está latente en memoria, con los procesos comunes funcionando. 
+    Se abre el archivo de parámetros, se asigna en memoria el espacio para la SGA, 
+    se lanzan los procesos en segundo plano, se abren los archivos de traza y alerta.\\
+    
+    -STARTUP FORCE:\\
+    Hace SHUTDOWN ABORT y arranca la BD.\\
+    
+    -STARTUP RESTRICT:\\
+    Es un modo especial de trabajo en el que la base de datos está abierta, pero solo se permite el acceso a usuarios 
+    con permiso RESTRICTED (lo poseen los administradores) para hacer tareas especiales de administración.\\
+    
+    -STARTUP RECOVER:\\
+    Espera a que terminen todas las transacciones en curso y todas las sesiones, 
+    fuerza un checkpoint, además de cerrar todos los ficheros y destruir (parar) la instancia.\\
+    
+    -SHUTDOWN NORMAL:\\
+    
+    -SHUTDOWN TRANSACTIONAL:\\
+    
+    -SHUTDOWN ABORT:\\
+    
+    -SHUTDOWN INMEDIATE:\\
+    
+   \item En el script lab_02_01.sql, se establecen privilegios de sistema, enliste los privilegios de sistema (DDL) 
+   utilizados y describa cada uno de ellos.\\
+   

@@ -64,3 +64,12 @@
    - Tablespaces read only.-\\
    *Se pueden consultar los datos de los objetos, no se puede ni borrar niinsertar nada en ellos.\\
    *La principal ventaja de un tablespace read only es que no hace faltahacer backup del mismo.\\
+   
+   -Tablespaces system y sysaux.-\\
+   Los tablespaces SYSTEM y SYSAUX son los únicos que, como mínimo, secrean con la BD (create database).\\
+   *El tablespace SYSTEM (No debe contener datos de aplicaciones):\\
+   *Contiene el DD, incluidos procedimientos almacenados, funciones,triggers y paquetes.\\
+   *También alberga al segmento de rollback system.\\
+   *El tablespace SYSAUX (>=10g) permite que en el tablespace SYSTEMsólo esté el DD, aglutinando las utilidades del sistema (Repositorio OEM,Intermedia, Spatial, OLAP, RMAN, XML DB, etc).\\
+   
+   

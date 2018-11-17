@@ -34,10 +34,11 @@
     fuerza un checkpoint, además de cerrar todos los ficheros y destruir (parar) la instancia.\\
     
     -SHUTDOWN TRANSACTIONAL:\\
-    sólo espera a que terminen las transacciones en curso, fuerza un checkpoint, cierra los ficheros y destruye (para) la instancia.\\
+    Sólo espera a que terminen las transacciones en curso, fuerza un checkpoint, cierra los ficheros y destruye (para) la instancia.\\
     
     -SHUTDOWN ABORT:\\
-    
+     Cierra la instancia (destruye procesos background y SGA) sin esperar a desmontar ni cerrar la BD (como en una “caída”, ni hace checkpoint ni cierra ficheros). Requiere recovery de la instancia al arrancar (lo hace automáticamente el proceso SMON).\\
+
     -SHUTDOWN INMEDIATE:\\
     Hace rollback de todas las transacciones en curso y cierra todas las sesiones; cierra y desmonta la BD, además de forzar un checkpoint, cerrar ficheros y parar la instancia (como los anteriores).\\
     
